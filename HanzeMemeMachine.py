@@ -17,6 +17,7 @@ async def on_ready():
 async def on_message(message):
     if message.content.upper().startswith('!HANZEXPERIENCE'):
         await bot.send_message(message.channel, "https://i.imgur.com/msv9liC.gif")
-
+    if message.content.upper().startswith('!VERSIE'):
+        await bot.send_message(message.channel, "De huidige versie van Hanze Meme Machine is: v" + configuratie["versienummer"])
 
 bot.run(configuratie["discord_api_sleutel"])
