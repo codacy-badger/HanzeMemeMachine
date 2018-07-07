@@ -15,7 +15,8 @@ commandos = {
     "!VERSIE": "Toont de versienummer van de bot in de chat waar deze is aangevraagd",
     "!MEME": "Geeft een willekeurige meme van HanzeMemes in de chat waar deze is aangevraagd",
     "!HELP": "Geeft een lijst terug met alle commando's. \n"
-             "Na help kan een commando getypt worden om hier de beschrijving van de krijgen."
+             "Na help kan een commando getypt worden om hier de beschrijving van de krijgen.",
+    "!VERS": "Geeft de meeste recente meme terug in chat."
 }
 
 
@@ -52,6 +53,9 @@ async def on_message(message):
             for commando in commandos:
                 commando_string += commando + "\n"
             await bot.send_message(message.channel, "Je kan de volgende commando's gebruiken: \n\n" + commando_string)
+
+    if message.content.upper().startswith('!VERS'):
+        await bot.send_message(message.channel, json_parser.zoek_verse_meme())
 
 
 bot.run(configuratie["discord_api_sleutel"])
