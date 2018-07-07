@@ -1,5 +1,4 @@
 from config import configuratie
-import json
 from random import randint
 
 import requests
@@ -7,8 +6,9 @@ import requests
 
 class JsonParser:
 
+    @classmethod
     # vraagt de verbinding aan bij reddit
-    def verbinden(self, url="https://www.reddit.com/r/Hanzememes/.json?count=25&after=t3_10omtd/"):
+    def verbinden(cls, url="https://www.reddit.com/r/Hanzememes/.json?count=25&after=t3_10omtd/"):
         response = requests.get(url,
                                 headers={"User-Agent": "Hanze Meme Machine v" + configuratie["versienummer"] + "(open source project. https://github.com/JonkerThing/HanzeMemeMachine)"})
         data = response.json()
