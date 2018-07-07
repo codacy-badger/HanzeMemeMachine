@@ -23,7 +23,7 @@ commandos = {
 async def on_ready():
     print("Bot is klaar voor gebruik")
 
-
+# Voeg hier het commando toe met bijbehorende logic
 @bot.event
 async def on_message(message):
     if message.content.upper().startswith('!HANZEXPERIENCE'):
