@@ -14,7 +14,7 @@ class JsonParser:
         data = response.json()
         return data
 
-    def zoek_meme(self):
+    def zoek_meme_willekeurig(self):
         json_data = self.verbinden()
         afbeelding = ""
 
