@@ -34,11 +34,19 @@ async def on_message(message):
         await bot.send_message(message.channel, json_parser.zoek_meme_willekeurig())
 
     if message.content.upper().startswith('!HELP'):
-        commando_string = ""
-        for commando in commandos:
-            commando_string += commando + "\n"
-        await bot.send_message(message.channel, "Je kan de volgende commando's gebruiken: \n\n" + commando_string)
-
+        bericht = message.content.upper().split()
+        if len(bericht) > 1:
+            try:
+                beschrijving = commandos[bericht[1]]
+                await bot.send_message(message.channel, "- **" + bericht[1] + "**\n" + beschrijving)
+            except KeyError:
+                await bot.send_message(message.channel, "- **" + bericht[1] + " ** \nis geen commando! \n"
+                                                                              "Typ !Help voor een lijst met commando's")
+        else:
+            commando_string = ""
+            for commando in commandos:
+                commando_string += commando + "\n"
+            await bot.send_message(message.channel, "Je kan de volgende commando's gebruiken: \n\n" + commando_string)
 
 
 bot.run(configuratie["discord_api_sleutel"])
