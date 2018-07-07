@@ -10,6 +10,7 @@ Alle commando's zijn niet hoofdletter gevoelig.
 * **!Versie** Geeft de huidige versie van Hanze Meme Machine terug in de chat.
 * **!Meme** Geeft eem willekeurige meme van HanzeMemes terug in de chat.
 * **!Help** Geeft een lijst terug met commando's of uitleg over een commando als je !help opvolgt met een commando
+* **!Vers** Geeeft de meeste recente meme met afbeelding terug.
 
 ## Gebruik
 ### 1. Clone de repository
@@ -48,5 +49,5 @@ python HanzeMemeMachine.py
 ***
 Om je bot actief te houden moet je script draaien. Als je de computer niet altijd aan wilt hebben staan overweeg dan om het via een RaspberryPi te draaien of via een VPS. 
 
-### Alleen gebruiken. Niks aan het project toevoegen :(
+### Als je de bot alleen wilt gebruiken zonder iets toe te voegen aan het project lees verder
 Ook wordt de bot [hier](https://discordapp.com/api/oauth2/authorize?client_id=464745470267228170&permissions=0&scope=bot) gehost. Klik op de link en voeg hem toe
