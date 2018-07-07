@@ -16,7 +16,12 @@ Alle commando's zijn niet hoofdletter gevoelig.
 ```git
 git clone https://github.com/JonkerThing/HanzeMemeMachine.git
 ```
-### 2. Maak een config.py bestand aan
+### 2. Installeer packages
+Toegevoegd is ``` requirements.txt ``` dit is een bestand waar alle nodige extra pakketen in staan. je kan ze gemakkelijk in 1x installeren door het volgende commando uit te voeren:
+```pip
+pip install -r requirements.txt
+```
+### 3. Maak een config.py bestand aan
 In de gekloonde repository mist 1 bestand. Namelijk de ```config.py```. Dit bestand wordt gebruikt om je persoonlijke discord sleutel op te slaan. Dit bestand ziet er als volgt uit:
 ```Python
 import os
@@ -32,10 +37,10 @@ configuratie = {
 De sleutel die je moet hebben kan je gratis krijgen via [deze pagina](https://discordapp.com/developers/docs/intro)
 Maak een nieuwe bot aan en plak de key in je ```config.py```
 
-### 3. Voeg de bot toe aan je server
+### 4. Voeg de bot toe aan je server
 De volgende stap is om je bot aan de server toe te voegen die je wilt.
 
-### 4. Start de bot!
+### 5. Start de bot!
 Je kan nou de bot starten door naar de map te gaan waar je ```HanzeMemeMachine.py``` zich bevindt en deze uit te voeren met
 ```Python
 python HanzeMemeMachine.py
