@@ -47,3 +47,6 @@ python HanzeMemeMachine.py
 ```
 ***
 Om je bot actief te houden moet je script draaien. Als je de computer niet altijd aan wilt hebben staan overweeg dan om het via een RaspberryPi te draaien of via een VPS. 
+
+### Alleen gebruiken. Niks aan het project toevoegen :(
+Ook wordt de bot [hier](https://discordapp.com/api/oauth2/authorize?client_id=464745470267228170&permissions=0&scope=bot) gehost. Klik op de link en voeg hem toe
