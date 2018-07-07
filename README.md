@@ -8,6 +8,7 @@ Alle commando's zijn niet hoofdletter gevoelig.
 
 * **!HanzeXperience** Plaatst het HanzeXperience logo in de chat waar het commando gedaan is.
 * **!Versie** Geeft de huidige versie van Hanze Meme Machine terug in de chat.
+* **!Meme** Geeft eem willekeurige meme van HanzeMemes terug in de chat.
 
 ## Gebruik
 ### 1. Clone de repository
